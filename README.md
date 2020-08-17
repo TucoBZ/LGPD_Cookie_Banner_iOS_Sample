@@ -205,7 +205,7 @@ Mas essa é a única maneira de se apresentar essa info da LGPD?
 A LGPD não especifica de forma clara como deve ser apresentada essa informação para o usuário, e o **Cookie Banner** é uma das maneiras de apresentar essa informação. Por exemplo, o Facebook apresenta uma tela que bloqueia a interação do usuário até que seja feita a revisão dessas informações pelo usuário.
 
 
-![bg right 50%](https://github.com/TucoBZ/LGPD_Cookie_Banner_iOS_Sample/Images/facebook_LGPD.jpeg)
+![bg right 45%](https://github.com/TucoBZ/LGPD_Cookie_Banner_iOS_Sample/blob/master/Images/facebook_LGPD.jpeg?raw=true)
 
 ---
 
