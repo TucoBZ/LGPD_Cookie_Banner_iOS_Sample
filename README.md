@@ -9,13 +9,115 @@ Vencendo a LGPD com Windows :computer:
 ###### ou sendo derrotado...
 
 ---
+<!-- _class: invert -->
 
-Sobre a LGPD
+Quem é o Túlio?
 ===
 
-Com a chegada da LGPD as aplicações tem que informar de forma clara e objetiva com qual finalidade os dados coletados do usuário serão utilizados, obtendo o consentimento do usuário por meio de um opt-in. 
+- Bacharel em Ciência da Computação
+- iOS Developer - 6+ anos
+    - BEPiD
+- Dextra - 4+ anos
+- pai do Théo 👶 e do Maui 🐶
+- ~~Magic e Pokémon~~
+- **Não sou advogado**!
 
-Uma forma de fazer isso é utilizando o famoso **Cookie Banner**
+
+
+
+![bg right:45% blur:1px](https://media-exp1.licdn.com/dms/image/C4E03AQEPe_Z8vJ7ZRA/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=18t7EVak5w7Wcc61XK-_nvIwe2sXkw8FIEVhSCZtlwE)
+
+---
+
+<!--fit-->
+Mas afinal... O que é LGPD?
+===
+
+---
+
+[Lei Geral de Proteção de Dados Pessoais (LGPD)](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm)
+===
+
+Inspirada na ***GDPR Européia***, essa lei regula como dados pessoais são coletados, utilizadados, acessados, distribuidos, processados, armazenados  e tratados, prevendo multa 2% do fatuamento limitado a R$50 milhões por infração.
+
+---
+
+A quem a lei se aplica?
+===
+
+Ela é abrangente o suficiente para que seu cumprimento seja exigido por empresas de qualquer porte, idependente da origem da empresa ou da maturidade de sua governança de dados e segurança da informação.
+Caso a empresa colete dados em território nacional esta deve seguir a legislação brasileira, mesmo que esses dados sejam processados em outro país.
+
+---
+
+Qual o prazo para se adequar a lei?
+===
+
+~~14 de Agosto de 2020~~
+
+3 de maio de 2021
+
+---
+
+Sobre a coleta de dados
+===
+
+- clareza em quais dados são coletados e para que fins;
+- os dados só podem ser coletados com o consentimento do titular;
+- consentimento dos pais ao envolver menores de 18 anos;
+- havendo alteração na finalidade do uso, deve haver um novo consentimento
+
+---
+
+Sobre a coleta de dados
+===
+
+- Usuário pode pedir:
+    - a revogação do uso
+    - o acesso
+    - a exclusão
+    - a portabilidade
+    - a complementação e correção
+    - a revisão humana em uma decisão automatizda indesejada
+
+---
+
+<!-- _class: invert -->
+
+<!--fit-->
+Dúvidas
+===
+
+![bg right 40%](https://media3.giphy.com/media/dyX9ixfxMpOUGawfdK/giphy.gif)
+
+
+---
+
+<!--fit-->
+Muitas....
+===
+
+---
+
+<!-- _class: invert -->
+![bg  60%](./Images/DNA_MUTANT.png)
+
+---
+
+<!--fit-->
+Legal... mas cadê o código?
+===
+
+---
+
+<!-- _class: invert -->
+
+Cookie Banner
+===
+
+É a forma mais tradicional de informar de forma clara e objetiva com qual finalidade os dados coletados do usuário serão utilizados e obter o consentimento do usuário por meio de um *opt-in*. 
+
+![bg right 90%](./Images/cookie_banner.png)
 
 ---
 <!-- _class: invert -->
@@ -34,7 +136,7 @@ Apresentar uma `view` por cima de toda a aplicação
 Pensando no problema...
 ===
 
-Se eu fosse apresentar isso como filho de um *ViewController* eu teria que praticamente replicar essa integração em cada controller da minha aplicação. Eu quero que eu **instâncie uma única vez** e resolva para toda aplicação, ficando transparente para aplicação e que eu tenha certeza que não irá mexer na estrutura atual do app. 
+Se eu fosse apresentar isso como filho de um *ViewController* eu teria que praticamente replicar essa integração em cada controller da minha aplicação. Eu quero **instânciar uma única vez** e resolver para toda aplicação, ficando transparente para aplicação e que eu tenha certeza que não irá mexer na estrutura atual do app. 
 
 
 --- 
@@ -96,7 +198,7 @@ extension UIApplication {
 ---
 
 <!--fit-->
-Como eu posso garantir que uma *UIWindow* vai sobre por outra? 
+Como eu posso garantir que uma *UIWindow* vai sobrepor outra? 
 ===
 
 ---
@@ -202,21 +304,34 @@ Mas essa é a única maneira de se apresentar essa info da LGPD?
 
 ---
 
-A LGPD não especifica de forma clara como deve ser apresentada essa informação para o usuário, e o **Cookie Banner** é uma das maneiras de apresentar essa informação. Por exemplo, o Facebook apresenta uma tela que bloqueia a interação do usuário até que seja feita a revisão dessas informações pelo usuário.
+A LGPD não especifica de forma clara como deve ser apresentada essa informação para o usuário, e o **Cookie Banner** é uma das maneiras de apresentar essa informação. 
+
+Por exemplo, o Facebook apresenta uma tela que bloqueia a interação do usuário até que seja feita a revisão dessas informações pelo usuário. E o WhatsApp aparece um banner logo abaixo da area de navgação.
 
 
-![bg right 45%](https://github.com/TucoBZ/LGPD_Cookie_Banner_iOS_Sample/blob/master/Images/facebook_LGPD.jpeg?raw=true)
+![bg right 80%](https://github.com/TucoBZ/LGPD_Cookie_Banner_iOS_Sample/blob/master/Images/facebook_LGPD.jpeg?raw=true)
+
+![bg  80%](./Images/WhatsApp_LGPD.jpeg)
 
 ---
 
 Referências
 ===
 
+[Lei Geral de Proteção de Dados Pessoais (LGPD)](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm)
+
+[General Data Protection Regulation (GDPR)](https://gdpr.eu/tag/gdpr/)
+
 [Blog - Creating context menu with highlight](https://blog.kulman.sk/creating-context-menu-with-highlight/)
+
 [Stackoverflow - about isUserInteractionEnabled and HitTest](https://stackoverflow.com/a/10892551/7262322)
+
 [Stackoverflow - avoiding HitTest in a view](https://stackoverflow.com/a/38089068/7262322)
+
 [PDF - Apple events programming guide](https://applescriptlibrary.files.wordpress.com/2013/11/apple-events-programming-guide.pdf)
+
 [Blog - UITextEffectsWindow](https://www.programmersought.com/article/98111993141/)
+
 [Gist - Sample, how to use marp to build keynote](https://gist.github.com/yhatt/a7d33a306a87ff634df7bb96aab058b5)
 
 ---
@@ -228,4 +343,6 @@ Contato
 
 tulio.bazan@dextra-sw.com
 
-![bg left:50% 50%](https://dextra.com.br/wp-content/uploads/2019/02/dextra-logo-3.png)
+![bg left:50% 70%](./Images/Dextra_vertical_negativa.png)
+
+
