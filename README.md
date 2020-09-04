@@ -129,6 +129,7 @@ Apresentar uma `view` por cima de toda a aplicação
 - mantendo a interação do app
 - com **link** para redirecionamento
 - botão de aceite 
+
 ![bg right 50%](https://media.giphy.com/media/l3bEWjYNEs46UYNcOZ/giphy.gif)
 
 ---
