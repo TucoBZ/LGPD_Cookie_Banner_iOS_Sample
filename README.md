@@ -341,9 +341,17 @@ Referências
 
 Contato
 ===
-
 tulio.bazan@dextra-sw.com
 
+![width:24px height:24px](./Images/linkedin.png) Linkedin: [**tuliobazansilva**](https://www.linkedin.com/in/tuliobazansilva/)
+![width:24px height:24px](./Images/github.png) github: [**TucoBZ**](https://github.com/TucoBZ)
+
+![width:200px height:200px](./Images/ProjectLink.png)
+
+
 ![bg left:50% 70%](./Images/Dextra_vertical_negativa.png)
+
+
+
 
 
