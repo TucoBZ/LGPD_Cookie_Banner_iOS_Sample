@@ -35,6 +35,11 @@ final class LGPDBannerContainerController: UIViewController {
         return appTopViewController?.prefersHomeIndicatorAutoHidden ?? super.prefersHomeIndicatorAutoHidden
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        let appTopViewController = UIApplication.topViewController()
+        return appTopViewController?.preferredStatusBarStyle ?? super.preferredStatusBarStyle
+    }
+
     lazy var banner: LGPDBannerView = {
         let banner = LGPDBannerView()
         banner.translatesAutoresizingMaskIntoConstraints = false
