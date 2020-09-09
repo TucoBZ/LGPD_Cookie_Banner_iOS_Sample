@@ -56,13 +56,12 @@ public class LGPDBannerView: UIView {
 
     override open func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         if #available(iOS 13, *) {
-            layer.shadowColor = UIColor.shadow?.cgColor
+            layer.shadowColor = UIColor.shadow.cgColor
         }
     }
 
     private func setupViewColors() {
         textView.backgroundColor = .background
-        //textView.textColor = .bannerText
         view.backgroundColor = .background
     }
 
