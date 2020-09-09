@@ -21,7 +21,7 @@ final class LGPDBannerWindow: UIWindow {
 
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let result = super.hitTest(point, with: event)
-        if result == self { return nil }
+        if result == self || result?.subviews.first is UntouchableView { return nil }
         return result
     }
 }

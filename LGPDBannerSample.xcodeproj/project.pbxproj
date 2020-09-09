@@ -19,6 +19,7 @@
 		595FD7DC24CF22920090A491 /* LGPDLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 595FD7DB24CF22920090A491 /* LGPDLocalizable.strings */; };
 		595FD7E024CF29280090A491 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FD7DF24CF29280090A491 /* Localizable.swift */; };
 		595FD7E324CF29920090A491 /* LGPDLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FD7E224CF29920090A491 /* LGPDLocalization.swift */; };
+		59756B9D2509738500DC0F78 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59756B9C2509738500DC0F78 /* UIColor+Extensions.swift */; };
 		59B5598524CF0EAF00ED7EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5598424CF0EAF00ED7EA1 /* AppDelegate.swift */; };
 		59B5598724CF0EAF00ED7EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5598624CF0EAF00ED7EA1 /* SceneDelegate.swift */; };
 		59B5599124CF0EB100ED7EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B5598F24CF0EB100ED7EA1 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 		595FD7DB24CF22920090A491 /* LGPDLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LGPDLocalizable.strings; sourceTree = "<group>"; };
 		595FD7DF24CF29280090A491 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		595FD7E224CF29920090A491 /* LGPDLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGPDLocalization.swift; sourceTree = "<group>"; };
+		59756B9C2509738500DC0F78 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		59B5598124CF0EAF00ED7EA1 /* LGPDBannerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGPDBannerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B5598424CF0EAF00ED7EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B5598624CF0EAF00ED7EA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				59271B1224CF325B000C8F24 /* UIApplication+Extensions.swift */,
+				59756B9C2509738500DC0F78 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				59271B1124CF321A000C8F24 /* LGPDBannerContainerController.swift in Sources */,
 				59B5598524CF0EAF00ED7EA1 /* AppDelegate.swift in Sources */,
 				595FD7E024CF29280090A491 /* Localizable.swift in Sources */,
+				59756B9D2509738500DC0F78 /* UIColor+Extensions.swift in Sources */,
 				595FD7E324CF29920090A491 /* LGPDLocalization.swift in Sources */,
 				59271B1924CF4213000C8F24 /* LGPDBannerManager.swift in Sources */,
 				59B5598724CF0EAF00ED7EA1 /* SceneDelegate.swift in Sources */,

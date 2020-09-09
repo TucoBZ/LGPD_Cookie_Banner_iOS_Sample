@@ -16,12 +16,13 @@ class ViewController: UIViewController {
 
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .background
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = .zero
         tableView.estimatedSectionFooterHeight = .zero
         tableView.separatorColor = .lightGray
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.tableHeaderView = UIView()
         tableView.tableFooterView = UIView()
         return tableView
     }()
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 
     override func loadView() {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .background
         self.view = view
         setupView()
     }
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setNeedsStatusBarAppearanceUpdate()
     }
 
     private func setupView() {

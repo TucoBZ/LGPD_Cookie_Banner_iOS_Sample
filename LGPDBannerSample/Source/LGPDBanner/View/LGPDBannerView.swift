@@ -49,8 +49,21 @@ public class LGPDBannerView: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
+        setupViewColors()
         setupViewLabels()
         setupShadow()
+    }
+
+    override open func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if #available(iOS 13, *) {
+            layer.shadowColor = UIColor.shadow?.cgColor
+        }
+    }
+
+    private func setupViewColors() {
+        textView.backgroundColor = .background
+        //textView.textColor = .bannerText
+        view.backgroundColor = .background
     }
 
     private func setupViewLabels() {
@@ -61,6 +74,10 @@ public class LGPDBannerView: UIView {
 
         let attributedString = NSMutableAttributedString(string: infoWithLink)
         let linkRange = attributedString.mutableString.range(of: LGPDLocalization.bannerLink.localized)
+        attributedString.addAttributes([
+            NSAttributedString.Key.foregroundColor: UIColor.bannerText
+        ],range: attributedString.mutableString.range(of: infoWithLink))
+
         attributedString.addAttributes([
             NSAttributedString.Key.link: linkingURL
         ], range: linkRange)
@@ -74,8 +91,9 @@ public class LGPDBannerView: UIView {
         confirmButton.setTitleColor(UIColor.systemBlue, for: .normal)
     }
 
+
     private func setupShadow() {
-        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = UIColor.shadow?.cgColor
         layer.shadowOpacity = 0.7
         layer.shadowOffset = .zero
         layer.shadowRadius = 6
