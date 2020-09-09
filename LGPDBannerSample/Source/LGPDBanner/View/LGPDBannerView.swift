@@ -93,7 +93,7 @@ public class LGPDBannerView: UIView {
 
 
     private func setupShadow() {
-        layer.shadowColor = UIColor.shadow?.cgColor
+        layer.shadowColor = UIColor.shadow.cgColor
         layer.shadowOpacity = 0.7
         layer.shadowOffset = .zero
         layer.shadowRadius = 6

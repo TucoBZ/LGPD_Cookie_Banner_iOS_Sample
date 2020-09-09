@@ -9,8 +9,8 @@
 import UIKit
 
 extension UIColor {
-    static let background = UIColor(named: "background")
-    static let shadow = UIColor(named: "shadow")
-    static let bannerText = UIColor(named: "bannerText")
+    static let background = UIColor(named: "background")!
+    static let shadow = UIColor(named: "shadow")!
+    static let bannerText = UIColor(named: "bannerText")!
 }
 
